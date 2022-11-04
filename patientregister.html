@@ -1,0 +1,171 @@
+<html>
+<head>
+    
+<title>
+Patient register
+</title>
+<style>
+
+
+  button{
+    width: 190px;
+    height: 40px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    background: #2f2f2f;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+
+.myDiv {
+    margin-left: 250px;
+  background-color: lightblue;
+  text-align: center;
+}
+input[type=text], select {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=date], select {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=textarea], select {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=textarea], select {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.myDiv{
+    width: 950px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav {
+    display: flex; /* 1 */
+    justify-content: space-between; /* 2 */
+    padding: 1rem 2rem; /* 3 */
+    background:white; /* 4 */
+  }
+nav ul {
+    display: flex; /* 5 */
+    list-style: none; /* 6 */
+  }
+  
+  nav li {
+    padding-left: 1rem; /* 7! */
+  }
+  nav a {
+    text-decoration: none;
+    color: #0d47a1
+  }
+  
+  .logo-top{
+    width: 50px;
+    height: 50px;
+    background-image: url("logo.png") ;
+    background-repeat: no-repeat;
+     background-position: center center;
+     background-size: cover;
+  }
+  .top-nav{
+    margin-right: 600px;
+  }
+</style>
+</head>
+<body>
+    
+    <div class="top-nav"><nav> 
+        <div class="logo-top"></div>
+        <div class="top-nav">
+            <h2 style="color:#DD5353 ">RedCross Blood Bank</h2>
+
+        </div>
+             
+      
+          
+            </nav>
+</div>
+    
+<div class="myDiv">
+    
+<h1>Add Patient</h1>
+
+<form>
+<label>Name</label>
+<input type="text" name="firstname"> <br><br>
+<label>DOB
+<input type="date"> <br><br>
+<label>Gender
+<select>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Others</option>
+</select>
+<br>
+<br>
+
+<label>Address</label>
+<br>
+
+<textarea rows="4" cols="35">
+</textarea><br><br>
+
+<label>ContactNo</label>
+
+<input type="text"> <br><br>
+<label>Blood group</label>
+<select>
+        <option>A+</option>
+        <option>A-</option>
+        <option>B+</option>
+        <option>B-</option>
+        <option>O+</option>
+        <option>O-</option>
+        <option>AB+</option>
+        <option>AB-</option>
+</select>
+<br>
+<br>
+<button type="button"><a href="patsucc.html"style="color:whitesmoke;text-decoration: none;">Update</a></button>
+
+</div>
+
+
+</body>
+</html>

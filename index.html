@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+<style>
+*{
+    margin:0;
+    
+    
+}
+
+.logo-top{
+  width: 50px;
+  height: 50px;
+  background-image: url("logo.png") ;
+  background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+.left {width: 100% ;height: 650px;/* margin: 25%; */background-image:url("background1.png") ;
+   
+   /* padding:50% ; */
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   margin-top: 10px;
+margin-bottom: 20px;
+
+
+}
+.min-left{
+    padding-left:450px;
+    padding-top:240px ;
+
+}
+.middle {width: 100%;
+height: 500px;
+margin-top: 50px;
+background-image: url("background2.png");
+background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+.min-middle{
+    padding-top:100px;
+    padding-left: 50px;
+}
+.right {width: 30%}
+.corner{
+    padding-top:80px ;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  display: flex; /* 1 */
+  justify-content: space-between; /* 2 */
+  padding: 1rem 2rem; /* 3 */
+  background:white; /* 4 */
+}
+.beside-logo-top{
+  margin-right: 57%;
+  margin-top: 10px;
+  width: 700px;
+  
+}
+
+
+
+
+nav ul {
+  display: flex; /* 5 */
+  list-style: none; /* 6 */
+}
+
+nav li {
+  padding-left: 1rem; /* 7! */
+}
+nav a {
+  text-decoration: none;
+  color: #0d47a1
+}
+
+.min-btn-left{
+  margin-bottom:20px;
+  padding-left: 150px;
+}
+.min-top-middle{
+  margin-bottom:10px ;
+} 
+
+.min-bottom-middle{
+  margin-top: 15px;
+}
+
+.list-mid{
+  margin:20px;
+}            
+.min-list-left{
+  padding-top:150px:
+}
+
+.top-cent{
+margin-left: 10px;
+}
+
+</style>
+</head>
+<body>
+
+
+<script type="text/javascript">
+    const btn = document.querySelector("#btn");
+    const btnText = document.querySelector("#btnText");
+
+    btn.onclick = () => {
+        btnText.innerHTML = "Thanks";
+        btn.classList.add("active");
+    };
+</script>
+
+<div>
+   
+    <nav>
+      <div class="logo-top"></div>
+       
+       <div class="beside-logo-top">
+        <ul>
+          <li> <h2 style="color:#DD5353">RedCross Blood Bank</h2></li>
+           <div class="top-cent" style="display:flex;justify-content: space-between;">
+            <li><a href="#"style="color:Black;text-decoration: none; font-weight: bold;font-style:italic;">Home  </a></li>
+            <li><a href="aboutUs.html"style="color:Black;text-decoration: none;font-weight: bold;font-style:italic;">About Us </a></li>
+            <li><a href="#"style="color:Black;text-decoration: none;font-weight: bold;font-style:italic;">Sign up </a></li>
+            <li><a href="bloodmanage.html"style="color:Black;text-decoration: none;font-weight: bold;font-style:italic;">Blood Bank</a></li>
+            <li><a href="#"style="color:Black;text-decoration: none;font-weight: bold;font-style:italic;">Contact</a></li>
+        
+           </div>
+           
+          
+        </ul>
+       </div>
+        
+      </nav>
+
+
+
+
+<div class="left">
+    <div class="min-left">
+        <div class="min-btn-left">
+        <h1>Donor Management</h1>
+        </div>
+        <div class="min-list-left">
+          <button type="button"> <a href="Donorregister.html" style="color:whitesmoke;text-decoration: none;">Add</a></button>
+<button type="button"><a href="Donorupdate.html" style="color:whitesmoke;text-decoration: none;">Update</a></button>
+<button type="button"><a href="DonorDelete.html" style="color:whitesmoke;text-decoration: none;">Delete</a></button>
+        </div>
+
+  
+    </div>
+  
+</div>
+
+<!-- Middle Part  -->
+<div class="middle">
+    <div class="min-middle">
+      <div class="min-top-middle">
+        <h1>Patient Management</h1>
+      </div>
+      <div class="min-bottom-middle"></div>
+        <ul >
+            <li class="list-mid"><button type="button"><a href="patientregister.html" style="color:whitesmoke;text-decoration: none;">Add</a></button></li>
+        <li class="list-mid"><button type="button"><a href="patupdate.html"style="color:whitesmoke;text-decoration: none;" >Update</a></button></li>
+        
+        <li class="list-mid"><button type="button"><a href="patdelete.html" style="color:whitesmoke;text-decoration: none;" >Delete</a></button></li>
+
+        </ul>
+        
+          
+    </div>
+</div>
+
+
+<br>
+<br>
+
+<div class="footer">
+  
+
+		<footer class="footer-distributed">
+
+			
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a class="link-1" href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact Us</a>
+					<a href="#">Blog</a>
+				</p>
+
+				<p>TCS &copy;2015</p>
+			</div>
+
+		</footer>
+</div>
+</body>
+</html>
